@@ -2,29 +2,29 @@ package com.paymentservice.entity;
 
 import com.paymentservice.pojo.PaymentRequest;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import javax.persistence.Column;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import javax.persistence.Table;
+import javax.persistence.Id;
+import javax.persistence.Entity;
 
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Entity
-@Table(name = "Payment")
+@javax.persistence.Entity
+@javax.persistence.Table(name = "Payment")
 public class Payment {
 	
 	
 	@Id
 	private int paymentid;
 	
-	@Column(name = "PayeeName")
+	@javax.persistence.Column(name = "PayeeName")
 	private String payeename;
 	
 	@Column(name = "PayementAmount")
